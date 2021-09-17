@@ -1,15 +1,17 @@
 import MetaTags from 'components/molecules/metatags'
-import NavigationMobile from 'components/organisms/NavigationMobile'
+import NavigationMenu from 'components/organisms/NavigationMenu'
 import HomeView from 'components/templates/HomeView'
+import ProjectsView from 'components/templates/ProjectsView'
 
 const HomePage = () => {
   return (
     <>
       <MetaTags />
-      <NavigationMobile />
-      <div className="pt-5 px-5 h-screen">
+      <NavigationMenu />
+      <main className="mx-5 h-full">
         <HomeView />
-      </div>
+        <ProjectsView />
+      </main>
     </>
   )
 }

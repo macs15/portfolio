@@ -1,25 +1,22 @@
-import { HomeIcon } from '@heroicons/react/outline'
+import { BriefcaseIcon, HomeIcon, MailIcon, UserIcon } from '@heroicons/react/outline'
+import NavigationItemMobile from 'components/atoms/NavigationItemMobile'
 
 const NavigationMobile = () => {
   return (
-    <nav className="absolute bottom-0 mobile-header w-full">
+    <nav className="fixed bottom-0 mobile-header w-full">
       <div className="flex h-full">
-        <a href="#" className="flex-1 flex flex-col items-center justify-center text-xs font-bold">
+        <NavigationItemMobile active href="#home" text="home">
           <HomeIcon className="w-6" />
-          Home
-        </a>
-        <a href="#" className="flex-1 flex flex-col items-center justify-center text-xs font-bold">
-          <HomeIcon className="w-6" />
-          Home
-        </a>
-        <a href="#" className="flex-1 flex flex-col items-center justify-center text-xs font-bold">
-          <HomeIcon className="w-6" />
-          Home
-        </a>
-        <a href="#" className="flex-1 flex flex-col items-center justify-center text-xs font-bold">
-          <HomeIcon className="w-6" />
-          Home
-        </a>
+        </NavigationItemMobile>
+        <NavigationItemMobile href="#projects" text="Projects">
+          <BriefcaseIcon className="w-6" />
+        </NavigationItemMobile>
+        <NavigationItemMobile href="#about" text="About">
+          <UserIcon className="w-6" />
+        </NavigationItemMobile>
+        <NavigationItemMobile href="#contact" text="Contact">
+          <MailIcon className="w-6" />
+        </NavigationItemMobile>
       </div>
     </nav>
   )
