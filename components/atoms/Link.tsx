@@ -8,15 +8,15 @@ const Link: FC<ButtonProps> = ({ text = '', className, color = 'accent', borderC
   }
 
   const activeBorder: Record<Color, string> = {
-    'primary': 'border-primary',
-    'accent': 'border-accent',
+    'primary': 'border-primary border',
+    'accent': 'border-accent border',
     'transparent': 'border-none'
   }
 
   return (
     <a
       href={href}
-      className={`${className} ${activeColor[color]} ${activeBorder[borderColor]} flex items-center text-base font-semibold px-2 py-1 rounded-md`}
+      className={`${activeColor[color]} ${activeBorder[borderColor]} flex items-center text-base font-semibold px-2 py-1 rounded-md ${className}`}
       target='_blank'
     >
       {text && <p>{text}</p>}

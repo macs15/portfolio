@@ -8,6 +8,7 @@ body {
   --text-color: #fffffe;
   --header-height: 80px;
   --z-fixed: 100;
+  --footer-width: 430px;
 
   padding: 0;
   margin: 0;
@@ -37,10 +38,19 @@ h3 {
   color: var(--text-color);
 }
 
+strong, p, span {
+  font-family: 'Manrope', sans-serif;
+}
+
 a {
   color: inherit;
   text-decoration: none;
   font-family: 'Manrope', sans-serif;
+}
+
+li {
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 * {
@@ -92,4 +102,19 @@ a {
   box-shadow: 0px 8px 8px 0px rgba(1, 1, 1, 0.5);
   -webkit-box-shadow: 0px 8px 8px 0px rgba(1, 1, 1, 0.5);
   -moz-box-shadow: 0px 8px 8px 0px rgba(1, 1, 1, 0.5);
+}
+
+.contact {
+  min-height: calc(100vh - var(--header-height));
+}
+
+.footer-container {
+  max-width: var(--footer-width);
+}
+
+.cross-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
