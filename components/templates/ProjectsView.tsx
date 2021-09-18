@@ -1,4 +1,5 @@
 import ProjectList from 'components/molecules/ProjectList'
+import { projectsData } from 'data/projects-data'
 
 const ProjectsView = () => {
   return (
@@ -9,7 +10,7 @@ const ProjectsView = () => {
           <span className="bg-primary section-title-bg"/>
         </h2>
       </div>
-      <ProjectList />
+      <ProjectList projects={projectsData} />
     </>
   )
 }

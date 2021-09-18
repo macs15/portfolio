@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { FC } from 'react'
 
-import { IconInterface } from './icons'
+import { IconInterface } from './Icons'
 
 const IconWrapper: FC<IconWrapperProps> = memo(
   ({ className = '', id, size = '1.25em', color = 'currentColor', onClick, children }) => {

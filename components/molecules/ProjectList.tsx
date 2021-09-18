@@ -1,16 +1,19 @@
-import ProjectCard from "components/organisms/ProjectCard"
-import { FC } from "react"
+import ProjectCard from 'components/organisms/ProjectCard'
+import { ProjectData } from 'data/projects-data'
+import { FC } from 'react'
 
-const ProjectList: FC<ProjectListProps> = () => {
+const ProjectList: FC<ProjectListProps> = ({ projects }) => {
   return (
     <div className="my-8 mx-5">
-      <ProjectCard imageUrl="studio-wrap.png" />
-      <ProjectCard imageUrl="studio-wrap.png" />
-      <ProjectCard imageUrl="studio-wrap.png" />
+      {projects.map(project => (
+        <ProjectCard key={project.id} project={project} />
+      ))}
     </div>
   )
 }
 
-type ProjectListProps = {}
+type ProjectListProps = {
+  projects: ProjectData[]
+}
 
 export default ProjectList
