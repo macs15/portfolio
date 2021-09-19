@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import { ExternalLinkIcon } from '@heroicons/react/outline'
 import { github } from 'components/atoms/Icons'
 import IconWrapper from 'components/atoms/IconWrapper'
@@ -13,10 +14,10 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
     <article className="shadow-card">
       <div className="relative bg-cover mt-5 rounded-lg">
         <div className="flex flex-col p-5 mx-2">
-          <h3 className="text-sm">{title}</h3>
-          <p className="text-paragraph mt-5">{description}</p>
+          <h3 className="text-sm z-10">{title}</h3>
+          <p className="text-paragraph mt-5 z-10" dangerouslySetInnerHTML={{ __html: description }} />
 
-          <div className="flex items-center mt-5">
+          <div className="flex items-center mt-5 z-10">
             <p>Built with:</p>
             <div className="flex items-center">
               {technologies.map(({ id, icon }) => (
@@ -26,7 +27,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
               ))}
             </div>
           </div>
-          <div className="flex items-center justify-center mt-5">
+          <div className="flex items-center justify-center mt-5 z-10">
             <Link href={repoUrl} color="transparent">
               <IconWrapper size="30px" color="white">
                 {github}
@@ -42,7 +43,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
         {/* Background */}
         <Image
           layout="fill"
-          className="absolute top-0 left-0 h-full w-full bg-no-repeat rounded-md -z-2 bg-cover object-cover"
+          className="absolute top-0 left-0 h-full w-full bg-no-repeat rounded-md -z-2 bg-cover object-cover bg-card"
           src={`/projects/${image}`}
           alt={title}
         />
