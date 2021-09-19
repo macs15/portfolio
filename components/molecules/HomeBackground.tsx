@@ -8,6 +8,8 @@ const HomeBackground = () => {
     <div className="w-full flex justify-center">
       <div className="absolute main-bg w-full">
         <Image
+          blurDataURL='/programming-blur.png'
+          placeholder="blur"
           objectFit="cover"
           layout="fill"
           src="/programming.png"
