@@ -93,6 +93,11 @@ li {
   min-height: var(--header-height);
   max-height: var(--header-height);
   z-index: var(--z-fixed);
+
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .desktop-header.shadow-header {
