@@ -3,6 +3,7 @@ import { github } from 'components/atoms/Icons'
 import IconWrapper from 'components/atoms/IconWrapper'
 import Link from 'components/atoms/Link'
 import { ProjectData } from 'data/projects-data'
+import Image from 'next/image'
 import { FC } from 'react'
 
 const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
@@ -39,7 +40,8 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
         </div>
 
         {/* Background */}
-        <img
+        <Image
+          layout="fill"
           className="absolute top-0 left-0 h-full w-full bg-no-repeat rounded-md -z-2 bg-cover object-cover"
           src={`/projects/${image}`}
           alt={title}
