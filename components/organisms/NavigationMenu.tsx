@@ -1,11 +1,13 @@
-import NavigationMobile from "./NavigationMobile"
+import { mediaToLg } from 'components/helpers/media-queries'
+import { useMedia } from 'react-use'
+
+import NavigationDesktop from './NavigationDesktop'
+import NavigationMobile from './NavigationMobile'
 
 const NavigationMenu = () => {
-  return (
-    <>
-      <NavigationMobile />
-    </>
-  )
+  const isMobile = useMedia(mediaToLg)
+
+  return <>{isMobile ? <NavigationMobile /> : <NavigationDesktop />}</>
 }
 
 export default NavigationMenu

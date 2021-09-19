@@ -7,6 +7,8 @@ body {
   --background-color: #16161a;
   --text-color: #fffffe;
   --header-height: 80px;
+  --header-desktop-height: 60px;
+  --home-image-max-width: 300px;
   --z-fixed: 100;
   --footer-width: 430px;
 
@@ -62,6 +64,14 @@ li {
   min-height: calc(100vh - var(--header-height));
 }
 
+.title {
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner-image {
+  max-width: var(--home-image-max-width);
+}
+
 .mobile-header {
   height: var(--header-height);
   z-index: var(--z-fixed);
@@ -70,6 +80,24 @@ li {
   box-shadow: 0px -5px 9px 0px rgba(1, 1, 1, 0.5);
   -webkit-box-shadow: 0px -5px 9px 0px rgba(1, 1, 1, 0.5);
   -moz-box-shadow: 0px -5px 9px 0px rgba(1, 1, 1, 0.5);
+}
+
+.desktop-header {
+  height: var(--header-desktop-height);
+  z-index: var(--z-fixed);
+
+  box-shadow: 0px 5px 9px 0px rgba(1, 1, 1, 0.5);
+  -webkit-box-shadow: 0px 5px 9px 0px rgba(1, 1, 1, 0.5);
+  -moz-box-shadow: 0px 5px 9px 0px rgba(1, 1, 1, 0.5);
+}
+
+.title-bg {
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  left: 0;
+  top: 55%;
+  z-index: -1;
 }
 
 .section-title-bg {
@@ -117,4 +145,11 @@ li {
   left: 0;
   width: 100%;
   z-index: -1;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  body {
+    --header-height: 0px;
+  }
 }

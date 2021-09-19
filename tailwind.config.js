@@ -8,7 +8,8 @@ module.exports = {
       sm: ['20px', '32px'],
       md: ['24px', '38px'],
       lg: ['32px', '50px'],
-      xl: ['40px', '64px']
+      xl: ['40px', '64px'],
+      xxl: ['42px', '68px']
     },
     extend: {
       colors: {

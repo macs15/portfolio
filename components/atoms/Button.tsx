@@ -1,10 +1,10 @@
 import { FC } from 'react'
 
-const Button: FC<ButtonProps> = ({ text, className, color = 'accent', onClick, children }) => {
+const Button: FC<ButtonProps> = ({ text, className = '', color = 'accent', onClick, children }) => {
   const activeColor: Record<Color, string> = {
-    'primary': 'bg-primary',
-    'accent': 'bg-accent',
-    'transparent': 'bg-transparent'
+    primary: 'bg-primary',
+    accent: 'bg-accent',
+    transparent: 'bg-transparent'
   }
 
   return (
