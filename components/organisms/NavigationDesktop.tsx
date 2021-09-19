@@ -1,14 +1,31 @@
 import { DownloadIcon } from '@heroicons/react/outline'
 import Button from 'components/atoms/Button'
 import NavigationItemDesktop from 'components/atoms/NavigationItemDesktop'
+import { useEffect, useState } from 'react'
 import { useWindowScroll } from 'react-use'
 
 const NavigationDesktop = () => {
   const { y } = useWindowScroll()
-  const hasShadow = y > 20 ? 'shadow-header' : ''
+  const [hasShadow, setHasShadow] = useState(false)
+
+  useEffect(() => {
+    const hasScrolled = y > 20
+
+    if (hasScrolled && hasShadow) return
+    if (!hasScrolled && !hasShadow) return
+
+    if (hasScrolled && !hasShadow) {
+      setHasShadow(true)
+      return
+    }
+
+    if (!hasShadow) return
+
+    setHasShadow(false)
+  }, [y])
 
   return (
-    <nav className={`desktop-header ${hasShadow} py-2 bg-gray sticky top-0 w-full mt-7`}>
+    <nav className={`desktop-header ${hasShadow ? 'shadow-header' : ''} py-2 bg-gray sticky top-0 w-full mt-7`}>
       <div className="flex items-center h-full mx-11">
         <img className="h-full" src="/desktop-logo.svg" alt="Logo" />
 

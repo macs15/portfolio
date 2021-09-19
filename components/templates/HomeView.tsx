@@ -6,7 +6,7 @@ import MainTitle from 'components/molecules/MainTitle'
 import { useMedia } from 'react-use'
 
 const HomeView = () => {
-  const isMobile = useMedia(mediaToLg)
+  const isMobile = useMedia(mediaToLg, false)
 
   return (
     <div id="home" className="flex flex-col home">
