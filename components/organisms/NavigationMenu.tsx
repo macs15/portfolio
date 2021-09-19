@@ -1,23 +1,12 @@
-import { mediaToLg } from 'components/helpers/media-queries'
-import { useEffect, useState } from 'react'
-import { useMedia } from 'react-use'
+import useMedia from 'components/hooks/useMedia'
 
 import NavigationDesktop from './NavigationDesktop'
 import NavigationMobile from './NavigationMobile'
 
 const NavigationMenu = () => {
-  const [loaded, setLoaded] = useState(false)
-  const isMobile = useMedia(mediaToLg, false)
+  const { isMobile } = useMedia()
 
-  useEffect(() => {
-    if (!window) return
-
-    if (!loaded) setLoaded(true)
-  }, [])
-
-  return (
-    isMobile && loaded ? <NavigationMobile /> : <NavigationDesktop />
-  )
+  return isMobile ? <NavigationMobile /> : <NavigationDesktop />
 }
 
 export default NavigationMenu

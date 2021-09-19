@@ -1,3 +1,4 @@
+import HomeBackground from 'components/molecules/HomeBackground'
 import MetaTags from 'components/molecules/metatags'
 import NavigationMenu from 'components/organisms/NavigationMenu'
 import AboutView from 'components/templates/AboutView'
@@ -10,6 +11,8 @@ const HomePage = () => {
     <>
       <MetaTags />
       <NavigationMenu />
+      <HomeBackground />
+
       <main className="mx-5 h-full">
         <HomeView />
         <ProjectsView />
