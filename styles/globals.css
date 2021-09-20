@@ -37,6 +37,14 @@ main {
   flex-direction: column;
 }
 
+/* Swiper */
+.swiper-button-next {
+  margin-right: 3rem;
+}
+.swiper-button-prev {
+  margin-left: 3rem;
+}
+
 h1,
 h2,
 h3 {
@@ -186,6 +194,16 @@ li {
 
 .footer-container {
   max-width: var(--footer-width);
+}
+
+div.vertical-social:after {
+  border-left: 1px;
+  width: 1px;
+  background-color: #7f5af0;
+  content: "";
+  display: block;
+  height: 5rem;
+  margin-top: 1rem;
 }
 
 .cross-line {

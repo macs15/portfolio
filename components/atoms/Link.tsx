@@ -16,7 +16,7 @@ const Link: FC<ButtonProps> = ({ text = '', className, color = 'accent', borderC
   return (
     <a
       href={href}
-      className={`${activeColor[color]} ${activeBorder[borderColor]} flex items-center text-base font-semibold px-2 py-1 rounded-md ${className}`}
+      className={`${activeColor[color]} ${activeBorder[borderColor]} flex items-center text-base font-semibold px-2 py-1 rounded-md ${className} transition-colors duration-200 ease-in-out`}
       target='_blank'
     >
       {text && <p>{text}</p>}

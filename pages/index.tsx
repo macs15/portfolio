@@ -1,4 +1,5 @@
 import MetaTags from 'components/molecules/metatags'
+import SocialNetworksDesktop from 'components/organisms/SocialNetworksDesktop'
 import AboutView from 'components/templates/AboutView'
 import ContactView from 'components/templates/ContactView'
 import HomeView from 'components/templates/HomeView'
@@ -21,6 +22,8 @@ const HomePage = () => {
         <AboutView />
         <ContactView />
       </main>
+
+      <SocialNetworksDesktop />
     </>
   )
 }

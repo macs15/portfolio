@@ -1,9 +1,8 @@
 import { github, linkedIn, twitter } from 'components/atoms/Icons'
 import IconWrapper from 'components/atoms/IconWrapper'
 import Link from 'components/atoms/Link'
+import { NETWORK_ICON_SIZE } from 'components/helpers/constants'
 import useMedia from 'components/hooks/useMedia'
-
-const NETWORK_ICON_SIZE = '40px'
 
 const SocialNetworks = () => {
   const { isMobile } = useMedia()

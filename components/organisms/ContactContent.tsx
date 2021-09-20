@@ -12,7 +12,7 @@ const ContactContent = () => {
         <h3 className="text-lg">Get in touch</h3>
         <Link
           text="Say Hello"
-          className="mt-5"
+          className="mt-5 hover:bg-primary"
           borderColor="primary"
           color="transparent"
           href="mailto:maykellcarrillo@gmail.com"
