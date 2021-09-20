@@ -18,7 +18,8 @@ module.exports = {
         accent: '#2CB67D',
         paragraph: '#94A1B2',
         secondary: '#72757E',
-        gray: '#16161A'
+        gray: '#16161A',
+        background: '#262652'
       }
     }
   },

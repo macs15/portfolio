@@ -33,6 +33,6 @@ type ButtonProps = {
   href: string
 }
 
-type Color = 'primary' | 'accent' | 'transparent'
+export type Color = 'primary' | 'accent' | 'transparent'
 
 export default Link

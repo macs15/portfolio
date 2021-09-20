@@ -1,6 +1,8 @@
 import SectionTitle from 'components/atoms/SectionTitle'
-import ProjectList from 'components/molecules/ProjectList'
 import { projectsData } from 'data/projects-data'
+import dynamic from 'next/dynamic'
+
+const ProjectList = dynamic(() => import('components/molecules/ProjectList'))
 
 const ProjectsView = () => {
   return (
