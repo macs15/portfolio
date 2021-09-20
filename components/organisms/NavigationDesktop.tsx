@@ -25,9 +25,13 @@ const NavigationDesktop = () => {
   }, [y])
 
   return (
-    <nav className={`desktop-header ${hasShadow ? 'shadow-header' : ''} py-2 sticky top-0 w-full mt-7`}>
+    <nav
+      className={`desktop-header ${hasShadow ? 'shadow-header' : ''} py-2 sticky top-0 w-full mt-7`}
+    >
       <div className="flex items-center h-full mx-11">
-        <img className="h-full" src="/desktop-logo.svg" alt="Logo" />
+        <a href="#">
+          <img className=" h-10" src="/desktop-logo.svg" alt="Logo" />
+        </a>
 
         <div className="flex-1 flex justify-center items-center">
           <NavigationItemDesktop href="#" text="Home" active />

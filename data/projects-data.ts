@@ -18,7 +18,7 @@ export const projectsData: ProjectData[] = [
       { id: 2, icon: gatsby },
       { id: 3, icon: strapi }
     ],
-    image: 'studio-wrap.png',
+    image: 'studio-wrap.webp',
     demoUrl: 'https://studio-wrap.netlify.app/',
     repoUrl: 'https://github.com/macs15/studiowrapfrontend'
   },
@@ -32,7 +32,7 @@ export const projectsData: ProjectData[] = [
       { id: 2, icon: nextjs },
       { id: 3, icon: nodejs }
     ],
-    image: 'bets.png',
+    image: 'edteam-courses.webp',
     demoUrl: 'https://edteam-cursos.vercel.app/',
     repoUrl: 'https://github.com/macs15/edteam-cursos'
   },
@@ -44,12 +44,12 @@ export const projectsData: ProjectData[] = [
       { id: 1, icon: javascript },
       { id: 2, icon: reactjs }
     ],
-    image: 'todoApp.jpg',
+    image: 'todo-app.webp',
     demoUrl: 'https://todo-app-challenge-seven.vercel.app/',
     repoUrl: 'https://github.com/macs15/todo-app-challenge'
   },
   {
-    id: 3,
+    id: 4,
     title: 'MERN stack task app',
     description: `An application with a CRUD of tasks in projects which requires authentication and allows the creation of new user accounts built with React. The state of the application is fully handled with context.`,
     technologies: [
@@ -57,7 +57,7 @@ export const projectsData: ProjectData[] = [
       { id: 2, icon: nodejs },
       { id: 3, icon: reactjs }
     ],
-    image: 'mernTask.png',
+    image: 'mern-task.webp',
     demoUrl: 'https://tasks-mern.vercel.app/',
     repoUrl: 'https://github.com/macs15/MERN-Tasks'
   }

@@ -1,9 +1,8 @@
 import { HandIcon } from '@heroicons/react/outline'
-import { github, linkedIn, twitter } from 'components/atoms/Icons'
-import IconWrapper from 'components/atoms/IconWrapper'
 import Link from 'components/atoms/Link'
+import dynamic from 'next/dynamic'
 
-const NETWORK_ICON_SIZE = '40px'
+const SocialNetworks = dynamic(() => import('./SocialNetworks'))
 
 const ContactContent = () => {
   return (
@@ -13,7 +12,7 @@ const ContactContent = () => {
         <h3 className="text-lg">Get in touch</h3>
         <Link
           text="Say Hello"
-          className="mt-5"
+          className="mt-5 hover:bg-primary"
           borderColor="primary"
           color="transparent"
           href="mailto:maykellcarrillo@gmail.com"
@@ -22,23 +21,7 @@ const ContactContent = () => {
         </Link>
       </div>
       <footer>
-        <div className="flex justify-center">
-          <Link color="transparent" href="https://github.com/macs15">
-            <IconWrapper className="fill-color text-thin" size={NETWORK_ICON_SIZE}>
-              {github}
-            </IconWrapper>
-          </Link>
-          <Link className="ml-8" color="transparent" href="https://www.linkedin.com/in/macs15/">
-            <IconWrapper className="fill-color text-thin" size={NETWORK_ICON_SIZE}>
-              {linkedIn}
-            </IconWrapper>
-          </Link>
-          <Link className="ml-8" color="transparent" href="https://twitter.com/16Macs">
-            <IconWrapper className="fill-color text-thin" size={NETWORK_ICON_SIZE}>
-              {twitter}
-            </IconWrapper>
-          </Link>
-        </div>
+        <SocialNetworks />
 
         <div className="mt-7 relative mx-auto footer-container">
           <div className="flex justify-center items-center mb-3">

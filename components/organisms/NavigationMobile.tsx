@@ -5,7 +5,7 @@ const NavigationMobile = () => {
   return (
     <nav className="fixed bottom-0 mobile-header w-full">
       <div className="flex h-full">
-        <NavigationItemMobile active href="#home" text="home">
+        <NavigationItemMobile active href="#" text="home">
           <HomeIcon className="w-6" />
         </NavigationItemMobile>
         <NavigationItemMobile href="#projects" text="Projects">

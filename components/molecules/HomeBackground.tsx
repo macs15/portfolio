@@ -6,7 +6,7 @@ const HomeBackground = () => {
 
   return !isMobile ? (
     <div className="w-full flex justify-center">
-      <div className="absolute main-bg w-full">
+      <div className="absolute main-container w-full">
         <Image
           blurDataURL='/programming-blur.png'
           placeholder="blur"

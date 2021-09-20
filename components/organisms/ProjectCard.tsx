@@ -3,6 +3,8 @@ import { ExternalLinkIcon } from '@heroicons/react/outline'
 import { github } from 'components/atoms/Icons'
 import IconWrapper from 'components/atoms/IconWrapper'
 import Link from 'components/atoms/Link'
+import ProjectsButtons from 'components/molecules/ProjectsButtons'
+import TechnologiesList from 'components/molecules/TechnologiesList'
 import { ProjectData } from 'data/projects-data'
 import Image from 'next/image'
 import { FC } from 'react'
@@ -15,29 +17,14 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
       <div className="relative bg-cover mt-5 rounded-lg">
         <div className="flex flex-col p-5 mx-2">
           <h3 className="text-sm z-10">{title}</h3>
-          <p className="text-paragraph mt-5 z-10" dangerouslySetInnerHTML={{ __html: description }} />
+          <p
+            className="text-paragraph mt-5 z-10"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
 
-          <div className="flex items-center mt-5 z-10">
-            <p>Built with:</p>
-            <div className="flex items-center">
-              {technologies.map(({ id, icon }) => (
-                <IconWrapper key={id} className="ml-2" size="20px">
-                  {icon}
-                </IconWrapper>
-              ))}
-            </div>
-          </div>
-          <div className="flex items-center justify-center mt-5 z-10">
-            <Link href={repoUrl} color="transparent">
-              <IconWrapper size="30px" color="white">
-                {github}
-              </IconWrapper>
-            </Link>
+          <TechnologiesList technologies={technologies} />
 
-            <Link color="primary" className="ml-7" href={demoUrl} text="Demo">
-              <ExternalLinkIcon className="ml-2 w-6" />
-            </Link>
-          </div>
+          <ProjectsButtons demoUrl={demoUrl} repoUrl={repoUrl} />
         </div>
 
         {/* Background */}
