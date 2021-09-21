@@ -1,5 +1,6 @@
 import { DownloadIcon } from '@heroicons/react/outline'
 import Button from 'components/atoms/Button'
+import Link from 'components/atoms/Link'
 import Logo from 'components/atoms/Logo'
 import useMedia from 'components/hooks/useMedia'
 import MainTitle from 'components/molecules/MainTitle'
@@ -28,9 +29,9 @@ const HomeView = () => {
           <MainTitle />
 
           {isMobile && (
-            <Button className="mt-5" text="Get resume">
+            <Link className="mt-5 active:translate-y-1 transform transition-transform duration-75 ease-linear" href="/maykell-carrillo-cv.pdf" text="Get resume">
               <DownloadIcon className="w-5 ml-2" />
-            </Button>
+            </Link>
           )}
         </div>
       </div>

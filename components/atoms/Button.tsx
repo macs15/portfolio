@@ -10,7 +10,7 @@ const Button: FC<ButtonProps> = ({ text, className = '', color = 'accent', onCli
   return (
     <button
       onClick={onClick}
-      className={`${className} ${activeColor[color]} flex items-center text-base font-semibold px-2 py-1 rounded-md`}
+      className={`${className} ${activeColor[color]} flex items-center text-base font-semibold px-2 py-1 rounded-md transition-transform transform active:translate-y-1 duration-75 ease-in-out`}
       type="button"
     >
       <p>{text}</p>

@@ -1,5 +1,5 @@
 import { DownloadIcon } from '@heroicons/react/outline'
-import Button from 'components/atoms/Button'
+import Link from 'components/atoms/Link'
 import NavigationItemDesktop from 'components/atoms/NavigationItemDesktop'
 import { useEffect, useState } from 'react'
 import { useWindowScroll } from 'react-use'
@@ -40,9 +40,9 @@ const NavigationDesktop = () => {
           <NavigationItemDesktop className="ml-5" href="#contact" text="Contact" />
         </div>
 
-        <Button text="Get resume">
+        <Link className="active:translate-y-1 transform transition-transform duration-75 ease-linear" href="/maykell-carrillo-cv.pdf" text="Get resume">
           <DownloadIcon className="w-5 ml-2" />
-        </Button>
+        </Link>
       </div>
     </nav>
   )

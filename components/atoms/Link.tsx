@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-const Link: FC<ButtonProps> = ({ text = '', className, color = 'accent', borderColor = 'transparent', href, children }) => {
+const Link: FC<ButtonProps> = ({ text = '', className, color = 'accent', borderColor = 'transparent', href, children, download = false }) => {
   const activeColor: Record<Color, string> = {
     'primary': 'bg-primary',
     'accent': 'bg-accent',
@@ -16,6 +16,7 @@ const Link: FC<ButtonProps> = ({ text = '', className, color = 'accent', borderC
   return (
     <a
       href={href}
+      download={download}
       className={`${activeColor[color]} ${activeBorder[borderColor]} flex items-center text-base font-semibold px-2 py-1 rounded-md ${className} transition-colors duration-200 ease-in-out`}
       target='_blank'
     >
@@ -30,6 +31,7 @@ type ButtonProps = {
   color?: Color
   borderColor?: Color
   className?: string
+  download?: boolean
   href: string
 }
 
