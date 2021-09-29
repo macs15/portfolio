@@ -1,8 +1,5 @@
 /* eslint-disable react/no-danger */
-import { ExternalLinkIcon } from '@heroicons/react/outline'
-import { github } from 'components/atoms/Icons'
-import IconWrapper from 'components/atoms/IconWrapper'
-import Link from 'components/atoms/Link'
+import useIntersection from 'components/hooks/useIntersection'
 import ProjectsButtons from 'components/molecules/ProjectsButtons'
 import TechnologiesList from 'components/molecules/TechnologiesList'
 import { ProjectData } from 'data/projects-data'
@@ -11,9 +8,9 @@ import { FC } from 'react'
 
 const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
   const { image, technologies, description, title, demoUrl, repoUrl } = project
-
+  const { ref } = useIntersection('projects')
   return (
-    <article className="shadow-card">
+    <article ref={ref} className="shadow-card">
       <div className="relative bg-cover mt-5 rounded-lg">
         <div className="flex flex-col p-5 mx-2">
           <h3 className="text-sm z-10">{title}</h3>
