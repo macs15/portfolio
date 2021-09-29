@@ -11,7 +11,7 @@ import {
 
 export const projectsData: ProjectData[] = [
   {
-    id: 1,
+    id: 0,
     title: 'Studio Wrap app',
     description: `This is an app with the purpose of showing the work done by a visual communication company. This is a project developed in Gatsbyjs, a framework based on React, with Node.js, Strapi and MySQL as backend`,
     technologies: [
