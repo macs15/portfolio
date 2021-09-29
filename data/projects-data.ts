@@ -1,3 +1,4 @@
+import { tailwind, typescript } from '../components/atoms/Icons'
 import {
   gatsby,
   IconInterface,
@@ -21,6 +22,19 @@ export const projectsData: ProjectData[] = [
     image: 'studio-wrap.webp',
     demoUrl: 'https://studio-wrap.netlify.app/',
     repoUrl: 'https://github.com/macs15/studiowrapfrontend'
+  },
+  {
+    id: 1,
+    title: 'Stock management app',
+    description: `This application regulates the flow between incoming and outgoing stock of a company's products. It was built with next.js and uses a JSON server to provide dynamic data to the application.`,
+    technologies: [
+      { id: 1, icon: typescript },
+      { id: 2, icon: nextjs },
+      { id: 3, icon: tailwind }
+    ],
+    image: 'stock-app.webp',
+    demoUrl: 'http://stock-app-drab.vercel.app/',
+    repoUrl: 'https://github.com/macs15/stock-app'
   },
   {
     id: 2,

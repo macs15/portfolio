@@ -14,6 +14,7 @@ const ProjectCardDesktop: FC<ProjectCardDesktopProps> = ({ projects }) => {
     <section className="mx-auto carousel-container flex my-10">
       <Swiper
         slidesPerView={1}
+        loop
         autoplay={{ delay: 6000 }}
         navigation
         pagination={{ clickable: true }}
