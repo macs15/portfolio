@@ -37,6 +37,7 @@ const ProjectCardDesktop: FC<ProjectCardDesktopProps> = ({ projects }) => {
                 <a
                   href={demoUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="lg:w-1/2 relative rounded-md shadow-card project-image"
                   style={{ height: '40vh' }}
                 >

@@ -4,16 +4,27 @@ import IconWrapper from 'components/atoms/IconWrapper'
 import Link, { Color } from 'components/atoms/Link'
 import { FC } from 'react'
 
-const ProjectsButtons: FC<ProjectsButtonsProps> = ({ repoUrl, demoUrl, linkColor = 'primary', linkText="Demo" }) => {
+const ProjectsButtons: FC<ProjectsButtonsProps> = ({
+  repoUrl,
+  demoUrl,
+  linkColor = 'primary',
+  linkText = 'Demo'
+}) => {
   return (
     <div className="flex items-center justify-center mt-5 z-10">
-      <Link href={repoUrl} color="transparent">
+      <Link href={repoUrl} color="transparent" rel="noopener no referrer">
         <IconWrapper size="30px" color="white">
           {github}
         </IconWrapper>
       </Link>
 
-      <Link color={linkColor} className="ml-7" href={demoUrl} text={linkText}>
+      <Link
+        rel="noopener noreferrer"
+        color={linkColor}
+        className="ml-7"
+        href={demoUrl}
+        text={linkText}
+      >
         <ExternalLinkIcon className="ml-2 w-6" />
       </Link>
     </div>

@@ -40,7 +40,7 @@ export const projectsData: ProjectData[] = [
     id: 2,
     title: 'CMS courses EDteam app',
     description:
-      "This project is a simple CRUD made with React.js that uses JSON Server as a fake Rest API. In the project you can create, update, delete and/or list courses.I developed it trying to follow a little bit the <a class='text-primary hover:underline' href='https://ed.team' target='_blank'>EDteam</a> website.",
+      "This project is a simple CRUD made with React.js that uses JSON Server as a fake Rest API. In the project you can create, update, delete and/or list courses.I developed it trying to follow a little bit the <a rel='noopener noreferrer' class='text-primary hover:underline' href='https://ed.team' target='_blank'>EDteam</a> website.",
     technologies: [
       { id: 1, icon: javascript },
       { id: 2, icon: nextjs },

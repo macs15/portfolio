@@ -3,7 +3,7 @@ const AboutContent = () => {
   return (
     <section className="my-10 mx-2 lg:grid-cols-2 lg:grid lg:mx-20 xl:mx-auto xl:px-20 about-container">
       <div className="hidden lg:block lg:my-auto lg:mr-5 relative xl:mr-10">
-        <img src="/about.svg" alt="" />
+        <img src="/about.svg" alt="About maykell carrillo" />
       </div>
 
       <div className="xl:ml-10">

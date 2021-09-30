@@ -9,18 +9,37 @@ const SocialNetworkList: FC<SocialNetworkListProps> = ({ isVertical = false }) =
 
   return (
     <>
-      <Link color="transparent" href="https://github.com/macs15">
-        <IconWrapper className="fill-color text-thin hover:text-primary transition-colors duration-200 ease-in-out" size={NETWORK_ICON_SIZE}>
+      <Link rel="noopener noreferrer" color="transparent" href="https://github.com/macs15">
+        <IconWrapper
+          className="fill-color text-thin hover:text-primary transition-colors duration-200 ease-in-out"
+          size={NETWORK_ICON_SIZE}
+        >
           {github}
         </IconWrapper>
       </Link>
-      <Link className={className} color="transparent" href="https://www.linkedin.com/in/macs15/">
-        <IconWrapper className="fill-color text-thin hover:text-primary transition-colors duration-200 ease-in-out" size={NETWORK_ICON_SIZE}>
+      <Link
+        rel="noopener noreferrer"
+        className={className}
+        color="transparent"
+        href="https://www.linkedin.com/in/macs15/"
+      >
+        <IconWrapper
+          className="fill-color text-thin hover:text-primary transition-colors duration-200 ease-in-out"
+          size={NETWORK_ICON_SIZE}
+        >
           {linkedIn}
         </IconWrapper>
       </Link>
-      <Link className={className} color="transparent" href="https://twitter.com/16Macs">
-        <IconWrapper className="fill-color text-thin hover:text-primary transition-colors duration-200 ease-in-out" size={NETWORK_ICON_SIZE}>
+      <Link
+        rel="noopener noreferrer"
+        className={className}
+        color="transparent"
+        href="https://twitter.com/16Macs"
+      >
+        <IconWrapper
+          className="fill-color text-thin hover:text-primary transition-colors duration-200 ease-in-out"
+          size={NETWORK_ICON_SIZE}
+        >
           {twitter}
         </IconWrapper>
       </Link>

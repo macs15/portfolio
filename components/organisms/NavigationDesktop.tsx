@@ -58,7 +58,7 @@ const NavigationDesktop = () => {
         </div>
 
         <Link
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           className="active:translate-y-1 transform transition-transform duration-75 ease-linear"
           href="/maykell-carrillo-cv.pdf"
           text="Get resume"
