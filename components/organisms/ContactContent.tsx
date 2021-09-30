@@ -15,6 +15,7 @@ const ContactContent = () => {
           className="mt-5 hover:bg-primary"
           borderColor="primary"
           color="transparent"
+          rel="noopener noreferrer"
           href="mailto:maykellcarrillo@gmail.com"
         >
           <HandIcon className="w-5 ml-2" />

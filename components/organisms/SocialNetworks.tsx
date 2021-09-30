@@ -9,17 +9,27 @@ const SocialNetworks = () => {
 
   return isMobile ? (
     <div className="flex justify-center">
-      <Link color="transparent" href="https://github.com/macs15">
+      <Link rel="noopener noreferrer" color="transparent" href="https://github.com/macs15">
         <IconWrapper className="fill-color text-thin" size={NETWORK_ICON_SIZE}>
           {github}
         </IconWrapper>
       </Link>
-      <Link className="ml-8" color="transparent" href="https://www.linkedin.com/in/macs15/">
+      <Link
+        rel="noopener noreferrer"
+        className="ml-8"
+        color="transparent"
+        href="https://www.linkedin.com/in/macs15/"
+      >
         <IconWrapper className="fill-color text-thin" size={NETWORK_ICON_SIZE}>
           {linkedIn}
         </IconWrapper>
       </Link>
-      <Link className="ml-8" color="transparent" href="https://twitter.com/16Macs">
+      <Link
+        rel="noopener noreferrer"
+        className="ml-8"
+        color="transparent"
+        href="https://twitter.com/16Macs"
+      >
         <IconWrapper className="fill-color text-thin" size={NETWORK_ICON_SIZE}>
           {twitter}
         </IconWrapper>
