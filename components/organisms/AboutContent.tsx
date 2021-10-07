@@ -9,7 +9,7 @@ const AboutContent = () => {
       <div className="xl:ml-10">
         <h3 className="text-sm">let's talk a bit about me</h3>
         <p className="text-base text-paragraph mt-2">
-          Hi, my name is Maykell. Nice to meet you! I have been a web developer for about two years.
+          Hi, my name is Maykell Carrillo. Nice to meet you! I have been a web developer for about two years.
           I am focused on the Front-end side but from time to time I like to learn a bit what
           happens behind the scenes... we talk about the backend side, of course.
         </p>
