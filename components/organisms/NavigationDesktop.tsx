@@ -1,5 +1,3 @@
-import { DownloadIcon } from '@heroicons/react/outline'
-import Link from 'components/atoms/Link'
 import NavigationItemDesktop from 'components/atoms/NavigationItemDesktop'
 import { useNavigationContext } from 'components/contexts/navigationContext'
 import { useEffect, useState } from 'react'
@@ -37,12 +35,12 @@ const NavigationDesktop = () => {
 
         <div className="flex-1 flex justify-center items-center">
           <NavigationItemDesktop href="#" text="Home" active={active === 'home'} />
-          <NavigationItemDesktop
+          {/* <NavigationItemDesktop
             className="ml-5"
             href="#projects"
             text="Projects"
             active={active === 'projects'}
-          />
+          /> */}
           <NavigationItemDesktop
             className="ml-5"
             href="#about"

@@ -1,5 +1,21 @@
 import { workedTechs } from 'data/worked-tech'
+
+const yearsOfExperience = new Date().getFullYear() - 2020
+const NUMBER_TO_WORDS: { [key: number]: string } = {
+  1: 'one',
+  2: 'two',
+  3: 'three',
+  4: 'four',
+  5: 'five',
+  6: 'six',
+  7: 'seven',
+  8: 'eight',
+  9: 'nine',
+  10: 'ten'
+}
+
 const AboutContent = () => {
+  const yearsInWords = NUMBER_TO_WORDS[yearsOfExperience] || yearsOfExperience.toString()
   return (
     <section className="my-10 mx-2 lg:grid-cols-2 lg:grid lg:mx-20 xl:mx-auto xl:px-20 about-container">
       <div className="hidden lg:block lg:my-auto lg:mr-5 relative xl:mr-10">
@@ -9,9 +25,9 @@ const AboutContent = () => {
       <div className="xl:ml-10">
         <h3 className="text-sm">let's talk a bit about me</h3>
         <p className="text-base text-paragraph mt-2">
-          Hi, my name is Maykell Carrillo. Nice to meet you! I have been a web developer for about six years.
-          I am focused on the Front-end side but from time to time I like to learn a bit what
-          happens behind the scenes... we talk about the backend side, of course.
+          Hi, my name is Maykell Carrillo. Nice to meet you! I have been a web developer for about{' '}
+          {yearsInWords} years. I am focused on the Front-end side but from time to time I like to
+          learn a bit what happens behind the scenes... we talk about the backend side, of course.
         </p>
         <p className="mt-2">
           <strong className="text-xs font-bold">

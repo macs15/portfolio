@@ -1,4 +1,4 @@
-import { BriefcaseIcon, HomeIcon, MailIcon, UserIcon } from '@heroicons/react/outline'
+import { HomeIcon, MailIcon, UserIcon } from '@heroicons/react/outline'
 import NavigationItemMobile from 'components/atoms/NavigationItemMobile'
 import { useNavigationContext } from 'components/contexts/navigationContext'
 
@@ -11,9 +11,9 @@ const NavigationMobile = () => {
         <NavigationItemMobile active={active === 'home'} href="#" text="Home">
           <HomeIcon className="w-6" />
         </NavigationItemMobile>
-        <NavigationItemMobile href="#projects" text="Projects" active={active === 'projects'}>
+        {/* <NavigationItemMobile href="#projects" text="Projects" active={active === 'projects'}>
           <BriefcaseIcon className="w-6" />
-        </NavigationItemMobile>
+        </NavigationItemMobile> */}
         <NavigationItemMobile href="#about" text="About" active={active === 'about'}>
           <UserIcon className="w-6" />
         </NavigationItemMobile>

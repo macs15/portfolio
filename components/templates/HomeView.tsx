@@ -1,14 +1,10 @@
-import { DownloadIcon } from '@heroicons/react/outline'
-import Link from 'components/atoms/Link'
 import Logo from 'components/atoms/Logo'
 import useIntersection from 'components/hooks/useIntersection'
-import useMedia from 'components/hooks/useMedia'
 import MainTitle from 'components/molecules/MainTitle'
 import Image from 'next/image'
 
 const HomeView = () => {
   const { ref } = useIntersection('home')
-  const { isMobile } = useMedia()
 
   return (
     <>
@@ -26,7 +22,7 @@ const HomeView = () => {
           </div>
           <MainTitle />
 
-          {isMobile && (
+          {/* {isMobile && (
             <Link
               className="mt-5 active:translate-y-1 transform transition-transform duration-75 ease-linear"
               href="/maykell-carrillo-cv.pdf"
@@ -35,7 +31,7 @@ const HomeView = () => {
             >
               <DownloadIcon className="w-5 ml-2" />
             </Link>
-          )}
+          )} */}
         </div>
       </div>
     </>

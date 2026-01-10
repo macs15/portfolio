@@ -1,4 +1,4 @@
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline"
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline'
 
 const MainTitle = () => {
   return (
@@ -6,10 +6,10 @@ const MainTitle = () => {
       <h1 className="text-md lg:text-xxl text-center">
         Hi, I’m{' '}
         <span className="relative title z-10">
-          Maykell
+          Maykell Carrillo
           <span className="bg-primary title-bg" />
         </span>
-        , I’m a <br />
+        ,
         <span className="flex items-center font-semibold lg:text-xxl title">
           <ChevronLeftIcon className="w-6 lg:w-11 text-primary" />
           Front-end Developer

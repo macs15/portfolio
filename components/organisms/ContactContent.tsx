@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 const SocialNetworks = dynamic(() => import('./SocialNetworks'))
 
 const ContactContent = () => {
+  const currentYear = new Date().getFullYear()
   return (
     <>
       <div className="flex flex-col items-center justify-center flex-1">
@@ -28,7 +29,7 @@ const ContactContent = () => {
           <div className="flex justify-center items-center mb-3">
             <span className="border-b border-thin cross-line"></span>
             <p className="bg-gray px-2 text-xs font-medium">
-              Made with 💜 by Maykell Carrillo © 2021
+              Made with 💜 by Maykell Carrillo © {currentYear}
             </p>
           </div>
         </div>

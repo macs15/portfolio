@@ -3,7 +3,6 @@ import SocialNetworksDesktop from 'components/organisms/SocialNetworksDesktop'
 import AboutView from 'components/templates/AboutView'
 import ContactView from 'components/templates/ContactView'
 import HomeView from 'components/templates/HomeView'
-import ProjectsView from 'components/templates/ProjectsView'
 import dynamic from 'next/dynamic'
 
 const NavigationMenu = dynamic(() => import('components/organisms/NavigationMenu'))
@@ -18,7 +17,7 @@ const HomePage = () => {
 
       <main className="mx-5 h-full">
         <HomeView />
-        <ProjectsView />
+        {/* <ProjectsView /> */}
         <AboutView />
         <ContactView />
       </main>
