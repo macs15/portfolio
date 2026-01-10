@@ -57,14 +57,14 @@ const NavigationDesktop = () => {
           />
         </div>
 
-        <Link
+        {/* <Link
           rel="noopener noreferrer nofollow"
           className="active:translate-y-1 transform transition-transform duration-75 ease-linear"
           href="/maykell-carrillo-cv.pdf"
           text="Get resume"
         >
           <DownloadIcon className="w-5 ml-2" />
-        </Link>
+        </Link> */}
       </div>
     </nav>
   )
