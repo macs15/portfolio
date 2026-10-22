@@ -129,25 +129,6 @@ export const projects: Project[] = [
   }
 ]
 
-export const process = [
-  {
-    title: 'Write it down first',
-    body: 'Every feature starts as a short spec: what changes for the person, the rules, the edge cases. On Gastify, both the AI agents and I work from it.'
-  },
-  {
-    title: 'AI types, I decide',
-    body: 'I work AI-first with Claude Code and GitHub Copilot and review every line before it lands. Documentation doubles as context for agents and new teammates.'
-  },
-  {
-    title: 'Prove it before merging',
-    body: 'Types, lint and tests on every commit: Jest or Vitest with Testing Library, MSW for the API, Maestro for end-to-end flows on iOS.'
-  },
-  {
-    title: 'Keep watching after launch',
-    body: 'New Relic flags errors in production and PostHog shows how people really move through Gastify. What I learn becomes the next spec.'
-  }
-]
-
 export const roles = [
   { years: '2023 – now', place: 'Danone', title: 'Frontend Developer', note: 'Headless storefronts, 3DS checkout, performance' },
   { years: '2022 – 2023', place: 'Skydropx', title: 'Frontend Engineer', note: 'Shipping rules engine used on Mercado Libre Mexico' },

@@ -275,7 +275,6 @@ ol, ul { list-style: none; }
   .frame figcaption { padding-inline: 4px; }
   .phones { height: 440px; }
 
-  #process + .list, [aria-labelledby='process'] .list { grid-template-columns: 1fr 1fr; column-gap: 72px; row-gap: 32px; }
 
   .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 72px; align-items: start; }
 }

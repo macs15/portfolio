@@ -3,7 +3,6 @@ import { LocalTime } from "@/components/LocalTime";
 import { RevealObserver } from "@/components/RevealObserver";
 import { Screens } from "@/components/Screens";
 import {
-  process,
   projects,
   roles,
   site,
@@ -192,18 +191,6 @@ export default function Home() {
               </article>
             ))}
           </div>
-        </section>
-
-        <section className="block wide" aria-labelledby="process" data-reveal>
-          <h2 id="process">How I work</h2>
-          <ol className="list">
-            {process.map((s) => (
-              <li key={s.title}>
-                <span>{s.title}</span>
-                <p className="muted">{s.body}</p>
-              </li>
-            ))}
-          </ol>
         </section>
 
         <div className="split">
