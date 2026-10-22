@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /maykell-carrillo-cv.pdf
-Allow: /
-Sitemap: https://maykell.dev/sitemap.xml

@@ -26,7 +26,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 yarn.lock
-package-lock.json
 
 # local env files
 .env.local
@@ -36,3 +35,7 @@ package-lock.json
 
 # vercel
 .vercel
+.taste-skill/
+
+# typescript build cache
+*.tsbuildinfo
