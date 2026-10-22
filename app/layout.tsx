@@ -1,21 +1,31 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { site } from '@/lib/content'
+import { description, title, url } from '@/lib/seo'
 
 const sans = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://maykell.dev'),
-  title: 'Maykell Carrillo · Senior Frontend Engineer',
-  description:
-    'Senior frontend engineer in Brazil. Headless eCommerce for Danone, operations platforms for agency clients, and Gastify, my own App Store finance app.',
+  metadataBase: new URL(url),
+  title,
+  description,
+  applicationName: site.name,
+  authors: [{ name: site.name, url }],
+  creator: site.name,
+  alternates: { canonical: '/' },
+  robots: { index: true, follow: true, 'max-image-preview': 'large', 'max-video-preview': -1 },
   openGraph: {
-    title: 'Maykell Carrillo · Senior Frontend Engineer',
-    description: 'Storefronts, operations tools and my own App Store app.',
-    url: 'https://maykell.dev',
-    type: 'website'
+    type: 'profile',
+    url: '/',
+    siteName: site.name,
+    title,
+    description,
+    locale: 'en_US',
+    firstName: 'Maykell',
+    lastName: 'Carrillo'
   },
-  icons: { icon: '/favicon.ico' }
+  twitter: { card: 'summary_large_image', title, description }
 }
 
 export const viewport: Viewport = {

@@ -11,6 +11,7 @@ import {
   today,
   type Project,
 } from "@/lib/content";
+import { jsonLd } from "@/lib/seo";
 
 function GastifyPhones() {
   const g = "/work/gastify";
@@ -292,6 +293,12 @@ export default function Home() {
         </footer>
       </main>
       <RevealObserver />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
     </>
   );
 }
