@@ -152,7 +152,7 @@ export function Screens({
             ),
           )}
         </div>
-        {screens.length > 1 && (
+        {screens.length > 0 && (
           <div className="screens-tabs" ref={tabs} data-overflow={overflow}>
             <Segmented
               label={`${name} screens`}

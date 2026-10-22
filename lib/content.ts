@@ -10,7 +10,7 @@ export const site = {
 
 export const today = [
   "I build the parts of a product people touch. Right now that means Danone's headless storefronts in Brazil and Mexico and, project by project, operations platforms built around how each client works.",
-  'Outside work I make Gastify, a finance app on the App Store, together with the designer Juan Alexis Mora Ángulo. A release isn’t the end of the job: analytics show us where people drop off and what they never open, and that decides what we build next.'
+  'Outside work I build Gastify, an iPhone finance app on the App Store, from the first spec to every release. Shipping isn’t the end of the job: I read the analytics to see where people drop off and what they never open, and that becomes the next spec.'
 ]
 
 export type Screen = {
@@ -71,10 +71,9 @@ export const projects: Project[] = [
     description:
       "Danone's direct-to-consumer stores used to reload the whole page on every click. I led the move to a headless Next.js storefront, built the checkout with address validation and Mastercard 3DS, and took PageSpeed from single digits to around 60 on image-heavy pages. Content teams now publish without waiting for a deploy.",
     stack: 'Next.js, React, TypeScript, GraphQL, Magento, New Relic',
+    // Add a Mundo Danone (Brazil) tab once mundodanone.com.br is back up.
     screens: [
-      { id: 'store', label: 'Bonafont', field: '#f26b2d', src: '/work/danone/store.webp', video: '/work/danone/store.mp4', alt: 'Bonafont online store: home, bottled water category and a product page asking for the delivery address', caption: 'Bonafont, the Mexico store: category, product, and the delivery address check before adding to cart.' },
-      // WIP: record Mundo Danone once its site is back up, then add src and video and drop wip.
-      { id: 'mundo-danone', label: 'Mundo Danone', field: '#1d4ed8', wip: true, src: '', alt: 'Mundo Danone, the Brazil store', caption: 'Mundo Danone, the Brazil store. Recording coming soon.' }
+      { id: 'store', label: 'Bonafont', field: '#f26b2d', src: '/work/danone/store.webp', video: '/work/danone/store.mp4', alt: 'Bonafont online store: home, bottled water category and a product page asking for the delivery address', caption: 'Bonafont, the Mexico store: category, product, and the delivery address check before adding to cart.' }
     ]
   },
   {
@@ -88,7 +87,7 @@ export const projects: Project[] = [
     screensNote: 'Sample data, client brand changed.',
     screens: [
       { id: 'preventive', label: 'Service', src: `${so}/service.webp`, video: `${so}/service.mp4`, alt: 'Completed preventive service with checklist steps and the manager’s signature', caption: 'A finished preventive service: engineers, times, the checklist per machine and the manager’s signature.' },
-      { id: 'technician', label: 'Engineer', phone: true, src: `${so}/tech.webp`, video: `${so}/tech.mp4`, alt: 'Engineer’s phone view of the machines to service at one gym', caption: 'The engineer works each machine step by step on a phone and flags anything relevant with notes and photos.' },
+      { id: 'technician', label: 'Engineer', phone: true, src: `${so}/tech.webp`, video: `${so}/tech.mp4`, alt: 'Engineer’s phone view of the machines to service at one gym', caption: 'On a phone, the engineer works through each machine’s checklist one step at a time, and can flag anything relevant with notes and photos.' },
       { id: 'dashboard', label: 'Dashboard', src: `${so}/dashboard.webp`, video: `${so}/dashboard.mp4`, alt: 'Admin dashboard with services by status and response time', caption: 'Services by status, and how many are within the response time.' },
       { id: 'inventory', label: 'Inventory', src: `${so}/inventory.webp`, video: `${so}/inventory.mp4`, alt: 'A client gym’s machine inventory', caption: 'One gym’s machines; each one keeps its own service history.' },
       { id: 'request', label: 'Client portal', src: `${so}/request.webp`, video: `${so}/request.mp4`, alt: 'Client form to request a corrective service with evidence upload', caption: 'Gyms report a broken machine themselves, with photos or video as evidence.' }
@@ -134,6 +133,21 @@ export const roles = [
   { years: '2022 – 2023', place: 'Skydropx', title: 'Frontend Engineer', note: 'Shipping rules engine used on Mercado Libre Mexico' },
   { years: '2021 – 2022', place: 'TARIC / Prontu+', title: 'Frontend Developer', note: 'Rebrand after the spin-off, telemedicine module' },
   { years: '2020 – 2021', place: 'EDteam', title: 'Frontend Developer', note: 'Scaled the platform from 300 to 1,500 concurrent users' }
+]
+
+export const process = [
+  {
+    title: 'Spec-driven development',
+    body: 'Every feature starts as a spec: what changes for the person, the rules and the edge cases. It is the brief for the AI agents and the reference for whoever joins next.'
+  },
+  {
+    title: 'Reviewed, then tested',
+    body: 'Agents write from the spec; I review every line, and nothing merges without passing tests.'
+  },
+  {
+    title: 'Measured after launch',
+    body: 'Errors and usage data show what to change next, and that becomes the next spec.'
+  }
 ]
 
 export const stack = [

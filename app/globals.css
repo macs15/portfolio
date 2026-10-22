@@ -175,7 +175,6 @@ ol, ul { list-style: none; }
 
 /* Screens gallery: real app screens, crossfaded */
 .frame-body.screens { display: block; place-items: normal; padding: 24px 24px 18px; min-height: 0; }
-.frame-body.screens:not(:has(.screens-tabs)) { padding-bottom: 24px; }
 .stage { position: relative; width: 100%; aspect-ratio: 16 / 10; }
 .shot {
   position: absolute; inset: 0;
@@ -276,6 +275,7 @@ ol, ul { list-style: none; }
   .phones { height: 440px; }
 
 
+  [aria-labelledby='process'] .list { grid-template-columns: repeat(3, 1fr); column-gap: 48px; }
   .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 72px; align-items: start; }
 }
 

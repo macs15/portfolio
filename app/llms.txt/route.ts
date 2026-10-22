@@ -1,4 +1,4 @@
-import { projects, roles, site, stack } from '@/lib/content'
+import { process, projects, roles, site, stack } from '@/lib/content'
 import { description, url } from '@/lib/seo'
 
 export const dynamic = 'force-static'
@@ -26,6 +26,10 @@ export function GET() {
 ${work}
 
 Client work is shown with sample data and the client brand changed.
+
+## How I work
+
+${process.map((s) => `- ${s.title}: ${s.body}`).join('\n')}
 
 ## Experience
 

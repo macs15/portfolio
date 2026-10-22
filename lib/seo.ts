@@ -36,7 +36,7 @@ export const jsonLd = {
       },
       worksFor: { '@type': 'Organization', name: roles[0].place },
       alumniOf: { '@type': 'CollegeOrUniversity', name: 'Centro Universitário Leonardo da Vinci' },
-      knowsAbout: stack,
+      knowsAbout: ['Spec-driven development', 'AI-assisted development', ...stack],
       knowsLanguage: ['es', 'en', 'pt']
     },
     {
